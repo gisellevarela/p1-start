@@ -9,8 +9,10 @@ data = np.loadtxt(filename, delimiter=",", skiprows=32)   # Attempts to load fil
 stress = data[:,3]
 strain = data[:,7]
 plt.plot(strain, stress, color="c", linestyle="-", label="line")
+plt.xlabel("Strain [Ext%]")
+plt.ylabel("Stress [MPa]")
+plt.title("Stress vs Strain")
 plt.show()
-
 
 ## Part 0
 # Figure out what arguments to add to the loadtxt function call
