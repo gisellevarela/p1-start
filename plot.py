@@ -12,7 +12,7 @@ plt.plot(strain, stress, color="c", linestyle="-", label="line")
 plt.xlabel("Strain [Ext%]")
 plt.ylabel("Stress [MPa]")
 plt.title("Stress vs Strain")
-ply.legend(loc='best')
+plt.legend(loc='best')
 plt.show()
 
 ## Part 0
