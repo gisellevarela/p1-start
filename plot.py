@@ -6,6 +6,7 @@ filename = sys.argv[1]        # Stores ARG1 in filename, as in: $ python plot.py
 data = np.loadtxt(filename, delimiter=",", skiprows=32)   # Attempts to load filename into local variable data.
 #"Time sec","Extension mm","Load N","Stress MPa","Cycle Count ","Total Cycle Count ","Repetitions Count ","Strain [Exten.] %","Tenacity gf/tex"
 
+range = (len(data))
 stress = data[:,3]
 strain = data[:,7]
 plt.plot(strain, stress, color="c", linestyle="-", label="line")
