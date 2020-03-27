@@ -52,4 +52,6 @@ plt.show()
 # your .gitignore file so you're not committing the figures to your repository.
 
 
-
+# LIL JOKE FOR YOU WHILE YOU READ MY BORING CODE
+## Why did the programmer quit his job?
+#### Because he didnt get arrays
