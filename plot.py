@@ -10,7 +10,7 @@ range = (len(data))
 stress = data[:,3]
 strain = data[:,7]
 plt.plot(strain, stress, color="c", linestyle="-", label="line")
-plt.xlabel("Strain [Ext%]")
+plt.xlabel("Strain [Exten.] %")
 plt.ylabel("Stress [MPa]")
 plt.title("Stress vs Strain")
 plt.legend(loc='best')
