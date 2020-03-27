@@ -14,6 +14,9 @@ plt.xlabel("Strain [Exten.] %")
 plt.ylabel("Stress [MPa]")
 plt.title("Stress vs Strain")
 plt.legend(loc='best')
+
+first, second =np.polyfit(stress,strain,1)
+
 plt.show()
 
 ## Part 0
