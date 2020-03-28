@@ -16,7 +16,7 @@ plt.title("Stress vs Strain")
 plt.legend(loc='best')
 
 first, second =np.polyfit(stress,strain,1)
-line_x = np.linespace(min(stress),max(stress))
+line_x = np.linspace(min(stress),max(stress))
 line_y = np.polyval([first,second] ,line_x)
 plt.plot(line_x,line_y, color='b', linestyle='--', label='Linear Regression')
 plt.savefig(filename+'.pdf')
