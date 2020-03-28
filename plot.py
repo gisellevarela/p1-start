@@ -16,13 +16,13 @@ plt.title("Stress vs Strain")
 plt.legend(loc='best')
 
 first, second =np.polyfit(stress,strain,1)
-x=np.linespace(min(stress),max(stress))
-y=np.polyval([first,second] ,x)
-plt.plot(x,y, color='b', linestyle='--', label='Linear Regression')
+line_x=np.linespace(min(stress),max(stress))
+line_y=np.polyval([first,second] ,line_x)
+plt.plot(line_x,line_y, color='b', linestyle='--', label='Linear Regression')
 plt.savefig(filename+'.pdf')
 plt.show()
 
-print("Young's Modulus : "+str(m))
+print("Young's Modulus : "+str(first)+ str('Mpa')
 ## Part 0
 # Figure out what arguments to add to the loadtxt function call
 # so that numbers are loaded into the local function 'data'.
